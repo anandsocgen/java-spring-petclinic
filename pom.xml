@@ -324,3 +324,18 @@
   </pluginRepositories>
 
 </project>
+
+<plugin>
+  <groupId>org.jacoco</groupId>
+  <artifactId>jacoco-maven-plugin</artifactId>
+  <version>0.8.10</version> <!-- use your current version -->
+  <configuration>
+    <excludes>
+      <exclude>java/*</exclude>
+      <exclude>javax/*</exclude>
+      <exclude>sun/*</exclude>
+      <exclude>com/sun/*</exclude>
+      <exclude>jdk/*</exclude>
+    </excludes>
+  </configuration>
+</plugin>
